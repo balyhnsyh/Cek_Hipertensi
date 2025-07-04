@@ -1,0 +1,35 @@
+:root{
+    --red:#FF0040;
+    --blue:#00CDF9;
+    --green:#99E65F;
+}
+
+*{
+    font-family: "Poppins";
+}
+
+.fs-h1{
+    font-style: "Poppins";
+    font-size: 32px;
+    font-weight: 700;
+}
+.fs-h2{
+    font-style: "Poppins";
+    font-size: 26px;
+    font-weight: 700;
+}
+.fs-h3{
+    font-style: "Poppins";
+    font-size: 20px;
+    font-weight: 500;
+}
+.fs-body{
+    font-style: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+}
+.fs-note{
+    font-style: "Poppins";
+    font-size: 14px;
+    font-weight: 200;
+}

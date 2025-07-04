@@ -1,0 +1,164 @@
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#back-marq{
+    height: 575px;
+    position: relative;
+    background-color: #1e1e1e;
+    top: 0;
+    margin-top: -90px;
+}
+
+.text-marq{
+    margin-top: 230px;
+    position: absolute;
+    color: white;
+    z-index: 2;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: 'Poppins';
+    color: white;
+}
+
+@media (max-width: 640px) {
+    .text-marq p{
+        font-size: 14px;
+        width: 100%;
+    }
+    .text-marq{
+        margin-top: 190px;
+    }
+  }
+
+.text-marq p{
+    font-family: 'Poppins';
+    margin-top: 20px;
+}
+.img-marq{
+    margin-top: 75px;
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.marquee{
+    display: inline-block;
+    animation: 100s slide infinite linear;
+}
+.opacity{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    margin-top: 75px;
+    z-index: 1;
+    background-color: rgba(18, 46, 41, 0.81)
+}
+
+.card-expert{
+    background: linear-gradient(var(--color-primary), var(--color-secondary));
+    border: 1px solid #7e7e7e;
+    color: white;
+}
+
+.img-pakar{
+    border-radius: 0 0 45px 0;
+}
+
+.btn-wa{
+    font-size: 25px;
+    color: white;
+    margin-top: 50px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+}
+.column {
+    width: 100%;
+    padding: 0.5em 0;
+}
+.card {
+    box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    color: #1f003b;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #ffffff;
+    transition: all .8s ease;
+}
+.card .img-container {
+    width: 8em;
+    height: 8em;
+    background-color: var(--color-primary);
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}
+.card img {
+    width: 100%;
+    border-radius: 50%;
+}
+.card h3 {
+    font-weight: 500;
+}
+.card p {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+}
+.icons {
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+}
+.card:hover {
+    background: linear-gradient(var(--color-primary), var(--color-secondary));
+    transition: all .8s ease;
+    color: #ffffff;
+}
+.card:hover .img-container {
+    transform: scale(1.08);
+    transition: all .8s ease;
+}
+@media screen and (min-width: 768px) {
+    section {
+        padding: 1em 7em;
+    }
+}
+@media screen and (min-width: 992px) {
+    section {
+        padding: 1em;
+    }
+    .card {
+        padding: 5em 1em;
+    }
+    .column {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 1em;
+    }
+}
